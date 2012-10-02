@@ -2,9 +2,15 @@ handleNavClick = (e) ->
 	$('nav').removeClass('big')
 	contentEl = $('#content')
 	
-	contentEl.load('./work.html #content > *', ->
+	url = './work.html'
+	contentSelector = '#content > *'
+	
+	# Load in page
+	contentEl.load("#{url} #{contentSelector}", ->
 		contentEl.removeClass('transparent')
 	)
+	
+	# history.pushState?({}, 'title?', url)
 	
 
 $ ->
