@@ -12,15 +12,17 @@
   
   <body class="<%= page_classes %>">
 	
-	<nav class="big">
-		<ul>
-			<li>Work
-			<li class="home">Home
-			<li>Posts
-		</ul>
-	</nav>
+		<nav class="big">
+			<ul>
+				<li>Work
+				<li class="home">Home
+				<li>Posts
+			</ul>
+		</nav>
 	
-    <%= yield %>
+		<div id="content">
+	    <%= yield %>
+		</div>
 
     <%= javascript_include_tag  "libs", "application" %>
   </body>
