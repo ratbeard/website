@@ -1,6 +1,10 @@
-//= require_tree .
-
+handleNavClick = (e) ->
+	$('nav').removeClass('big')
+	
 
 $ ->
-	setTimeout (-> $('nav').removeClass('big')), 500
+	$(document).on('click', 'nav.big li', handleNavClick)
+	
+	
+
 
