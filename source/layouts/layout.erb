@@ -5,12 +5,13 @@
     
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= data.page.title || "Mikes" %></title>
-    
+
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag  "application" %>
   </head>
   
   <body class="<%= page_classes %>">
     <%= yield %>
+    <%= javascript_include_tag  "application" %>
   </body>
 </html>
