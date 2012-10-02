@@ -1,0 +1,15 @@
+nav {
+	width: 333px;
+	margin: 0 auto;
+	
+	li {
+		float: left;
+		width: 33.3%;
+		height: 100px;
+		text-align: center;
+	}
+	
+	.home {
+		background: red;
+	}
+}
