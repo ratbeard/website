@@ -1,6 +1,7 @@
 @import 'compass/css3';
 
 nav {
+	display: none;
 	width: 333px;
 	margin: 0 auto;
 	@include transition(all 1.1s);
@@ -16,9 +17,9 @@ nav {
 	.home {
 //		background: black;
 	}
-}
-
-nav.big {
-	@include transform(scale(1.5) translateY(100px));
-	width: 999px;
+	
+	&.big {
+		@include transform(scale(1.5) translateY(100px));
+		width: 999px;
+	}
 }
