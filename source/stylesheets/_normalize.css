@@ -1,3 +1,5 @@
+/* modified */
+
 /*! normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
 
 /* =============================================================================
@@ -147,22 +149,6 @@ blockquote {
     margin: 1em 40px;
 }
 
-/*
- * Addresses styling not present in S5, Chrome
- */
-
-dfn {
-    font-style: italic;
-}
-
-/*
- * Addresses styling not present in IE6/7/8/9
- */
-
-mark {
-    background: #ff0;
-    color: #000;
-}
 
 /*
  * Corrects font family set oddly in IE6, S4/5, Chrome
@@ -186,29 +172,6 @@ pre {
     white-space: pre;
     white-space: pre-wrap;
     word-wrap: break-word;
-}
-
-/*
- * 1. Addresses CSS quotes not supported in IE6/7
- * 2. Addresses quote property not supported in S4
- */
-
-/* 1 */
-
-q {
-    quotes: none;
-}
-
-/* 2 */
-
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-small {
-    font-size: 75%;
 }
 
 /*
@@ -240,18 +203,11 @@ sub {
 ul,
 ol {
     margin-left: 0;
-    padding: 0 0 0 40px;
-}
-
-dd {
-    margin: 0 0 0 40px;
-}
-
-nav ul,
-nav ol {
+    padding: 0 0 0 0;
     list-style: none;
     list-style-image: none;
 }
+
 
 
 /* =============================================================================
@@ -279,19 +235,6 @@ svg:not(:root) {
 
 
 /* =============================================================================
-   Figures
-   ========================================================================== */
-
-/*
- * Addresses margin not present in IE6/7/8/9, S5, O11
- */
-
-figure {
-    margin: 0;
-}
-
-
-/* =============================================================================
    Forms
    ========================================================================== */
 
@@ -313,15 +256,6 @@ fieldset {
     padding: 0.35em 0.625em 0.75em;
 }
 
-/*
- * 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects alignment displayed oddly in IE6/7
- */
-
-legend {
-    border: 0; /* 1 */
-    *margin-left: -7px; /* 2 */
-}
 
 /*
  * 1. Corrects font size not being inherited in all browsers
@@ -395,16 +329,6 @@ input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
 }
 
-/*
- * Removes inner padding and border in FF3+
- * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
- */
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
 
 /*
  * 1. Removes default vertical scrollbar in IE6/7/8/9
