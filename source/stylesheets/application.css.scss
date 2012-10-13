@@ -3,3 +3,23 @@
 @import 'base';
 @import 'nav';
 
+
+
+.project {
+	list-style-type: none;
+	
+	h3 {
+	}
+	
+	.hero {
+		
+	}
+	
+	.thumbnails {
+		float: left;
+		> li {
+			float: left;
+			padding: 10px;
+		}
+	}
+}

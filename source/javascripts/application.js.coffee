@@ -22,3 +22,4 @@ $ ->
 	
 
 
+	window.mySwipe = new Swipe($('.thumbnails')[0])
