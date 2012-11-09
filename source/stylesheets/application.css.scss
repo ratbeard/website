@@ -7,19 +7,40 @@
 
 .project {
 	list-style-type: none;
-	
+	text-align: center;
+			
 	h3 {
 	}
 	
-	.hero {
-		
+	> p {
+		padding: 0 5%;
+		line-height: 1.4;
 	}
 	
-	.thumbnails {
-		float: left;
+	.hero {
+	}
+	
+	.gallery {
 		> li {
 			float: left;
 			padding: 10px;
+		}
+		img {
+			max-width: 100%;
+		}
+		
+		.dots {
+			display: inline-block;
+			
+			li {
+				float: left;
+				font-size: 1.3em;
+				padding-right: 5px;
+				color: #697279;
+				&.active {
+					color: blue;
+				}
+			}
 		}
 	}
 }

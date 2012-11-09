@@ -21,5 +21,5 @@ $ ->
 	
 	
 
-
-	window.mySwipe = new Swipe($('.thumbnails')[0])
+	# Gallery
+	window.mySwipe = new Swipe($('.gallery')[0])
