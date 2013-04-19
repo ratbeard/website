@@ -3,18 +3,16 @@
 @import 'base';
 @import 'nav';
 
-
-
 .project {
 	overflow: hidden;
 	padding: 60px 0;
 	clear: both;
-	
+
 	.copy, .pics {
 		width: 50%;
 		box-sizing: border-box;
 	}
-	
+
 	// copy
 	// ====
 	.copy {
@@ -27,7 +25,7 @@
 	.intro {
 		font-size: 1.05em;
 	}
-	
+
 	// pics
 	// ====
 	.pics {
@@ -45,13 +43,102 @@
 			margin: 2% 2% 0 0;
 		}
 	}
-	
-	
+
+
 	// Rows
 	&:nth-of-type(even) {
 		.copy { float: right;}
 		.pics { float: left;}
 	}
-
-
 }
+
+
+.project2 {
+	margin-top: 200px;
+	overflow: hidden;
+	clear: both;
+	margin: 20px auto;
+	position: relative;
+	max-width: 1200px;
+	.title {
+		font-size: 2em;
+		text-align: center;
+		padding: 15px 0;
+	}
+	.main-image {
+		// width: 525px;
+		// height: 300px;
+		background: #ccc;
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+
+	.pic {
+		width: 150px;
+		height: 100px;
+		background: #ccc;
+	}
+	.col {
+		float: left;
+		width: 20%;
+		// border: 1px solid green;
+	}
+	.left-col, .right-col {
+		padding-top: 70px;
+
+		img {
+			max-width: 200px;
+			margin: 0 0 20px 0;
+		}
+	}
+	.center-col {
+		width: 60%;
+	}
+
+	a.btn {
+		margin-top: 10px;
+	}
+	text-align: center;
+}
+
+.btn {
+      box-shadow:inset 0px 1px 0px 0px #ffe0b5;
+      background:linear-gradient(to bottom, #fbb450 5%, #f89306 100%);
+      background-color:#fbb450;
+      border-radius:7px;
+      border:1px solid #c97e1c;
+      display:inline-block;
+      color:#ffffff;
+      font-family:Trebuchet MS;
+      font-size:17px;
+      font-weight:bold;
+      padding:6px 11px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #8f7f24;
+  }
+  .btn:hover {
+      background:linear-gradient(to bottom, #f89306 5%, #fbb450 100%);
+      background-color:#f89306;
+  }
+  .btn:active {
+      position:relative;
+      top:1px;
+  }
+
+
+.guide {
+	position: fixed;
+	top: 50px;
+
+	> li {
+		width:  20px;
+		height: 20px;
+		background: #ccc;
+		margin: 10px;
+		&.active {
+			border: 1px solid green;
+		}
+	}
+}
+

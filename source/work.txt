@@ -4,7 +4,7 @@ Tech: rails, impactJS, hype, heroku
 Role: backend, js, animation
 Desc: Make it on the leaderboard and win big prizes with these 2 HTML5 games for Bufallo Wild Wings.
 
-I worked primarily building out the scoring and leaderboard functionality (including code to detect cheaters) as well as building the IE/mobile HTML-based card-matching game to compliment the canvas-based platformer.  I got some experience with impactJS working on the cutscenes and game flow logic, in addition to also animating the scoreboard screen.  A [site of the day](xxx) winner!
+I worked primarily building out the scoring and leaderboard functionality (including code to detect cheaters) as well as building the IE/mobile HTML-based card-matching game to compliment the canvas-based platformer.  I got some experience with impactJS working on the cutscenes and game flow logic, in addition to also animating the scoreboard screen.  A [site of the day](http://www.awwwards.com/web-design-awards/buffalo-wild-wings-protect-the-football) winner!
 
 Screenshots:
 
