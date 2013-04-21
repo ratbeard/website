@@ -75,3 +75,20 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+
+# This un-checked in file should contain:
+#   S3_ACCESS_KEY = '...'
+#   S3_SECRET_KEY = '...'
+# 
+load './secrets.rb'
+
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                = 'www.mikefrawley.com' # The name of the S3 bucket you are targetting. This is globally unique.
+  s3_sync.region                = 'us-east-1'     # The AWS region for your bucket.
+  s3_sync.aws_access_key_id     = S3_ACCESS_KEY
+  s3_sync.aws_secret_access_key = S3_SECRET_KEY
+  s3_sync.delete                = false # We delete stray files by default.
+  s3_sync.after_build           = false # We chain after the build step by default. This may not be your desired behavior...
+end
+
