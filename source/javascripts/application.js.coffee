@@ -24,6 +24,7 @@
 # 	# Gallery
 # 	window.mySwipe = new Swipe($('.gallery')[0])
 
+return
 
 win = $(window)
 doc = $(document)
@@ -61,11 +62,13 @@ onScroll = ->
 		p1.css(opacity: 1 - percent)
 		p2.css(opacity: 0)
 
-	[s, e] = [e, e+diff]
+	[s, e] = [e, e+diff + 10]
 	if s< top < e
 		percent = (top - s) / (e - s)
 		p1.css(opacity: 0)
 		p2.css(opacity: percent)
+
+	[s, e] = [e, e+diff]
 
 
 
