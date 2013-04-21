@@ -92,3 +92,6 @@ activate :s3_sync do |s3_sync|
   s3_sync.after_build           = false # We chain after the build step by default. This may not be your desired behavior...
 end
 
+
+# Don't compress html
+Slim::Engine.set_default_options pretty: true
