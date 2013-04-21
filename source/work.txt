@@ -6,11 +6,13 @@ Desc: Make it on the leaderboard and win big prizes with these 2 HTML5 games for
 
 I worked primarily building out the scoring and leaderboard functionality (including code to detect cheaters) as well as building the IE/mobile HTML-based card-matching game to compliment the canvas-based platformer.  I got some experience with impactJS working on the cutscenes and game flow logic, in addition to also animating the scoreboard screen.  A [site of the day](http://www.awwwards.com/web-design-awards/buffalo-wild-wings-protect-the-football) winner!
 
+https://www.buffalowildwings.com/protectthefootball/game?type=lite
+
 Screenshots:
 
-- Site of the day
-- Mobile game
-- Leaderboard
+√ Site of the day
+√ Mobile game
+√ Leaderboard
 - Animating score screen
 - Platformer cutscene
 - Video showing all would be sweet
