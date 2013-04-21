@@ -15,6 +15,7 @@ www.mikefrawley.com buckets in s3 and load from the naked domain.  I entered in
 a redirect from mikefrawley.com => www.mikefrawley.com initialialy which I
 tried to correct but s3 console wouldn't let me delete that entry.  Even
 deleting and recreating the bucket kept it around.  Anyways, its a bit more
-work to set that up anyways as it requires using amazon's dns system.
+work to set that up anyways as it requires using amazon's dns system so I did a
+dns level redirect.
 
 [1] http://docs.aws.amazon.com/AmazonS3/latest/dev/website-hosting-custom-domain-walkthrough.html
