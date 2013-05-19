@@ -1,5 +1,5 @@
 Protect The Football
-====================
+=============
 Tech: rails, impactJS, hype, heroku
 Role: backend, js, animation
 Desc: Make it on the leaderboard and win big prizes with these 2 HTML5 games for Bufallo Wild Wings.
@@ -17,13 +17,14 @@ Screenshots:
 - animating clock on homepage?
 
 
+
 Cambria
 =======
-Tech: middleman, google maps
+Tech: middleman, google maps, c#,
 Role: animations, js, layout
 Desc: Beautiful design met awesome interactive features for this premium countertop company.
 
-I'm still impressed with what designer Dan Jenstad and I were able to achieve in the three "dream scene" animated homepages, especially consider they were built in 2010 when CSS based animations were pretty new (and it being my first stab at animations).  I combined trusty js image spriting with lots of research into css transitions/3dtransforms/keyframes to create effects that looked like they were made in flash but could run smoothly on an ipad1, with fallback animations for ie7.  I did some other misc. layout on the site and built the store locator.
+I'm still impressed with what designer Dan Jenstad and I were able to achieve in the three "dream scene" animated homepages, especially consider they were built in 2010 when CSS based animations were pretty new (and it being my first stab at animations).  I combined trusty js image spriting with lots of research into css transitions/3dtransforms/keyframes to create effects that looked like they were made in flash but could run smoothly on an ipad1, with fallback animations for ie7.  I did some other misc. layout on the site and built the store locator.  M E G A S L A B.
 
 Screenshots:
 
@@ -34,6 +35,8 @@ Screenshots:
 - 3d?
 - store locator
 - laneshaw
+- M E G A S L A B
+
 
 
 3m Innovation
@@ -42,9 +45,9 @@ Tech: jruby, rails, rails_admin
 Role: backend, js, sysadmin, layout, animation
 Desc: A clean, fully responsive site showcasing 3m's innovative technologies and the stories it has created.
 
-I led the backend development of a rails_admin based CMS, add in support for multi-server publishing, i18n, and dozens of custom components that powered the rich front-end stories showcased on the site.  It was "enterprise ready" with jruby deployed on tomcat, along with an oracle database.
+I led the backend development of a rails_admin based CMS, adding in support for multi-server publishing, i18n, and dozens of custom components that powered the rich front-end stories showcased on the site.  It was "enterprise ready" with jruby deployed on tomcat, along with an oracle database.
 
-I also did frontend + backend integration with a host of social sharing sites, layout and js for the map page, built a js responsive image swapper, integration with the brightcove video api, and a custom animation or two.
+I also did frontend + backend integration with a host of social sharing sites, layout and js for the map page, built a js responsive image swapper, integration with the brightcove video api, and a few custom animations.
 
 Screenshots:
 
@@ -54,6 +57,7 @@ Screenshots:
 - miner dust animation
 - map
 - story landing page
+
 
 
 Lookbook
@@ -73,6 +77,26 @@ Screenshots:
 - pdf download popup?
 
 
+
+3m Offers
+======
+Tech: rails, rackspace cloud, cucumber
+Role: backend, js
+Desc: Monthly "Free Giveaway" site built to handle high load
+
+I built a platform for the occasional "Free Sample Giveaway" to be used across 3M's consumer brands like Nexcare and Postit.  The goal was to let users get in, watch a video, and get their free sample, without crashing.
+
+A wide range of support from ie6 to android tablets to embedding within a facebook tab.  My first use of cucumber on a serious project, which was a lot of fun to test the js wizard and validation steps
+
+Screenshots:
+
+- landing
+- video
+- form
+- video of cucumber?
+
+
+
 Orange Julius
 =============
 Tech: googlemaps
@@ -87,20 +111,6 @@ Screenshots:
 - store locator
 - widgets closeup, quiz widget
 
-
-Curo
-====
-Tech: KnockoutJS
-Role: js
-Desc: We laughed complex branching and validation requirements in the face on this Doctor Search app using the data-binding capabilities of KnockoutJS.
-
-Long forms that branched based on users input, insane validation, custom input widgets, auto-save, and syncing data between multiple widgets on a page made this not your typical form-based app.  Midway through I ripped out the jquery.validate library we'd been hacking around to write a pure knockout-based validation library.  I walked away really impressed with the speed we were able to create and change behavior using data binding.
-
-Screenshots:
-
-- Search form, calendar widget
-- Doctor results?
-- Util nav re-search
 
 
 Why I'm Here
@@ -118,6 +128,7 @@ Screenshots:
 - sms response would be great
 
 
+
 Wingers
 =======
 Tech: middleman
@@ -131,6 +142,22 @@ Screenshots:
 - Top of page with fire
 - lots of tiny parachutes in BG, ring of fire
 - spin in sauce cup
+
+
+
+Curo
+====
+Tech: KnockoutJS
+Role: js
+Desc: We laughed complex branching and validation requirements in the face on this Doctor Search app using the data-binding capabilities of KnockoutJS.
+
+Long forms that branched based on users input, insane validation, custom input widgets, auto-save, and syncing data between multiple widgets on a page made this not your typical form-based app.  Midway through I ripped out the jquery.validate library we'd been hacking around to write a pure knockout-based validation library.  I walked away really impressed with the speed we were able to create and change behavior using data binding.
+
+Screenshots:
+
+- Search form, calendar widget
+- Doctor results?
+- Util nav re-search
 
 
 
@@ -152,6 +179,7 @@ Screenshot:
 - new homepage
 
 
+
 Cambria Color Picker
 ====================
 Tech: jqueryui
@@ -164,6 +192,7 @@ Screenshots:
 
 - main page
 - results list
+
 
 
 Cakes.com
@@ -180,6 +209,8 @@ Screenshots:
 - backend holiday hours screen
 - backend order status screen
 
+
+
 King Fantastic
 ==============
 Tech: html
@@ -193,6 +224,8 @@ Screenshots:
 - responsive image from space150.com
 - video uploader image from space150.com
 
+
+
 Health Tool
 ===========
 Tech: jqueryui
@@ -205,6 +238,7 @@ Screenshots:
 
 - error state
 - dropdown open
+
 
 
 Dashboard
