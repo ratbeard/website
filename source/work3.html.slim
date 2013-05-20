@@ -3,28 +3,7 @@ title: ˙∆˚
 ---
 
 
-ol.guide2
-  li.active
-  li
-  li
-  li
-  li
-  li
-  li
-  li
-  li
-  li
-  li
-  li
-  li
-  li
-  li
-  li
-  li
-a.next2 href='#' next
-
-.project3
-
+#protect-the-football.project3
   .centered
     .main
       .title Protect the Football
@@ -38,4 +17,37 @@ a.next2 href='#' next
   img.b src=image_path('screenshots/protectthefootball/2.jpg')
   img.c src=image_path('screenshots/protectthefootball/3.jpg')
   img.d src=image_path('screenshots/protectthefootball/4.jpg')
+
+  - content_for :guide do
+    li
+      a href="#protect-the-football"
+        img src=image_path('screenshots/protectthefootball/1.jpg') width=20 height=20
+  
+
+#cambria.project3
+  .centered
+    .main
+      .title Cambria
+      p I built the IE/mobile card-matching game and got some experience with ImpactJS animating the cutscenes and flow logic.  Made the animated score screen, as well as the backend to power the leaderboard.
+      p Winner of a <a href="#">site of the day</a> award.
+      a.btn3 href="#" Play Demo
+      a.btn3 href="#" View Cutscene
+      a.btn3 href="#" View Site
+
+  img.a src=image_path('screenshots/protectthefootball/1.jpg') 
+  img.b src=image_path('screenshots/protectthefootball/2.jpg')
+  img.c src=image_path('screenshots/protectthefootball/3.jpg')
+  img.d src=image_path('screenshots/protectthefootball/4.jpg')
+
+  - content_for :guide do
+    li
+      a href="#cambria"
+        img src=image_path('screenshots/cambria/1.jpg') width=20 height=20 
+
+//////////////////////
+
+ol.guide2
+  == yield_content :guide
+
+a.next2#next-project href='#' next
 

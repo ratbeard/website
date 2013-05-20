@@ -24,6 +24,64 @@
 # 	# Gallery
 # 	window.mySwipe = new Swipe($('.gallery')[0])
 
+
+class Project
+  constructor: (@el, @guideEl, @index, @id) ->
+
+class ProjectList
+  ids: {}
+  constructor: () ->
+    projectEls = $('.project3')
+    guideEls = $('.guide2 li')
+    @list = for el, i in projectEls
+      id = el.id
+      @ids[id] = new Project($(el), $(guideEls[i]), i, id)
+  after: (project) ->
+    nextIndex = (project.index + 1) % @list.length
+    @list[nextIndex]
+  at: (index) ->
+    @list[index]
+  get: (id) ->
+    @ids[id] || throw "No project: #{id}"
+
+
+
+class WorkUI
+  constructor: (@projects) ->
+  showProject: (project) ->
+    if @activeProject
+      @activeProject.el.hide()
+      @activeProject.guideEl.removeClass('active')
+    project.el.show()
+    project.guideEl.addClass('active')
+    @activeProject = project
+  showNextProject: ->
+    @showProject(@projects.after(@activeProject))
+
+
+onGuideClick = (e) ->
+  e.preventDefault()
+  id = $(@).attr('href').substr(1)
+  project = projects.get(id)
+  ui.showProject(project)
+
+onNextClick = (e) ->
+  ui.showNextProject()
+
+
+
+window.projects = new ProjectList()
+window.ui = new WorkUI(projects)
+ui.showProject(projects.at(0))
+
+
+$('.guide2').on 'click', 'a', onGuideClick
+$('#next-project').on 'click',  onNextClick
+
+
+
+
+
 return
 
 win = $(window)
