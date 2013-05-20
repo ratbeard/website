@@ -72,7 +72,7 @@ onNextClick = (e) ->
 
 window.projects = new ProjectList()
 window.ui = new WorkUI(projects)
-ui.showProject(projects.at(0))
+ui.showProject(projects.at(4))
 
 
 $('.guide2').on 'click', 'a', onGuideClick
