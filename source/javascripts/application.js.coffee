@@ -48,13 +48,46 @@ class ProjectList
 
 class WorkUI
   constructor: (@projects) ->
+
   showProject: (project) ->
-    if @activeProject
-      @activeProject.el.hide()
-      @activeProject.guideEl.removeClass('active')
+    @activeProject.guideEl.removeClass('active')
+    project.guideEl.addClass('active')
+
+    @x ||= 0
+    if @x == 0
+      @transition1(@activeProject, project)
+    else if @x == 1
+      @transition2(@activeProject, project)
+    @x = (@x + 1) % 2
+
+    @activeProject = project
+
+  transition1: (old, now) ->
+    old.el.css(transition: 'all .7s ease-in')
+
+    setTimeout =>
+      old.el.css(transform: "rotateY(180deg)")
+      setTimeout(=>
+        old.el.hide().css(transition: '', transform: '')
+        now.el.fadeIn()
+        now.guideEl.addClass('active')
+      , 1000)
+    , 1
+
+  transition2: (old, now) ->
+    old.el.fadeOut ->
+      now.el.fadeIn()
+
+
+
+  showFirstProject: (project) ->
     project.el.show()
     project.guideEl.addClass('active')
     @activeProject = project
+
+
+
+
   showNextProject: ->
     @showProject(@projects.after(@activeProject))
 
@@ -72,7 +105,7 @@ onNextClick = (e) ->
 
 window.projects = new ProjectList()
 window.ui = new WorkUI(projects)
-ui.showProject(projects.at(0))
+ui.showFirstProject(projects.at(0))
 
 
 $('.guide2').on 'click', 'a', onGuideClick
