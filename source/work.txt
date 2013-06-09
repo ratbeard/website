@@ -188,6 +188,8 @@ Tech: jqueryui
 Role: js, layout
 Desc: Facebook tab app to filter cambria's tiles.
 
+https://www.facebook.com/CambriaQuartz/app_450055328378774
+
 This was one of my first projects working at space150 but I still pretty proud of the quality of the js code for this one.  To make filtering fast even in ie6 I based the filtering logic on bitmasks, creating a small Bitmask class which called `valueOf` on all operands to work polymorphicly on other Bitmasks or plain numbers.  The backend attached bitmask values via data- attributes (before it was cool!) so the frontend was completely agnostic to the meaning of a given bitmask, making updates easy.  The page had a jquery ui widget for the list, the filter, and a parent that listened to events and communicated between the two.  Pretty dece.
 
 Screenshots:

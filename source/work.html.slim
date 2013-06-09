@@ -4,7 +4,7 @@ title: Work
 
 .project
   .text
-    .title Protect The Football
+    .title BWW Protect The Football
     p.intro Compete in two HTML5 games to get on the leaderboard.
     p I worked primarily building out the scoring and leaderboard functionality (including code to detect cheaters) as well as building the IE/mobile HTML-based card-matching game to compliment the canvas-based platformer.  I animated the post-game screens and got some experience with impactJS working on cutscenes and game flow logic.
     p Winner of a <a href="#">site of the day</a> award.
@@ -18,6 +18,7 @@ title: Work
       img.thumbnail src=image_path('screenshots/protectthefootball/3.jpg')
       img.thumbnail src=image_path('screenshots/protectthefootball/4.jpg')
       
+
 .project
   .text
     .title Cambria
@@ -60,11 +61,11 @@ title: Work
 .project
   .text
     .title Lookbook
-    p.intro Webapp for Healthcare portal salemen to generate customized pdf's for potential clients. 
+    p.intro Webapp for healthcare portal salemen to generate customized pdf's for potential clients. 
     p 
-      | It was a blast to try out tons of new technology on this project, including
+      | it was a blast to try out tons of new technology on this project, including
       | coffeescript, backbone with data-bindings, imagemagik, wkhtmltopdf, s3, heroku.
-      | It let healthcare salesmen generate pdf showing potential clients what 
+      | it let healthcare salesmen generate pdf showing potential clients what 
       | their branded portal site would look like. 
     .role
     .tech  
@@ -77,3 +78,174 @@ title: Work
       img.thumbnail src=image_path('screenshots/lookbook/4.jpg')
 
 
+.project
+  .text
+    .title 3M Offers
+    p.intro Monthly "Free Giveaway" site built to handle high load.
+    p I built a platform for the occasional "Free Sample Giveaway" to be used across 3M's consumer brands like Nexcare and Postit.  The goal was to let users get in, watch a video, and get their free sample, without crashing.
+    p A wide range of support from ie6 to android tablets to embedding within a facebook tab.  My first use of cucumber on a serious project, which was a lot of fun to test the js wizard and validation steps
+    .role Role: backend, js
+    .tech Tech: rails, rackspace cloud, cucumber
+  .pics
+    == image_tag 'screenshots/offers/1.jpg', class: 'main-image'
+    .thumbnails
+      img.thumbnail.active src=image_path('screenshots/offers/1.jpg') 
+      img.thumbnail src=image_path('screenshots/offers/2.jpg')
+      img.thumbnail src=image_path('screenshots/offers/3.jpg')
+      img.thumbnail src=image_path('screenshots/offers/4.jpg')
+      
+
+.project
+  .text
+    .title BWW Wingers
+    p.intro Scroll to send this wing on a parachute jump, through a ring of fire, and finish with a spinning plop into a cup of sauce.
+    p This was a fun animation project to promote a new type of wings for Buffalo Wild Wings.  Scrolling the page moved the wing through a series of CSS and JS based animations.  Try scrolling the wing back and forward through the fire to launch an army of tiny parachutes.  Keep clicking on the wing and you might see an easter egg (or two).
+    .role Role: animation, layout
+    .tech Tech: middleman
+  .pics
+    == image_tag 'screenshots/wingers/1.jpg', class: 'main-image'
+    .thumbnails
+      img.thumbnail.active src=image_path('screenshots/wingers/1.jpg') 
+      img.thumbnail src=image_path('screenshots/wingers/2.jpg')
+      img.thumbnail src=image_path('screenshots/wingers/3.jpg')
+      img.thumbnail src=image_path('screenshots/wingers/4.jpg')
+
+
+.project
+  .text
+    .title MyCuro
+    p.intro Complex form branching and validation solved Doctor Search app using the data-binding capabilities of KnockoutJS.
+    p Long forms that branched based on users input, insane validation, custom input widgets, auto-save, and syncing data between multiple widgets on a page made this not your typical form-based app.  Midway through I ripped out the jquery.validate library we'd been hacking around to write a pure knockout-based validation library.  I walked away really impressed with the speed we were able to create and change behavior using data binding.
+    .role Role: js
+    .tech Tech: knockoutjs, chosenjs
+  .pics
+    == image_tag 'screenshots/mycuro/1.jpg', class: 'main-image'
+    .thumbnails
+      img.thumbnail.active src=image_path('screenshots/mycuro/1.jpg') 
+      img.thumbnail src=image_path('screenshots/mycuro/2.jpg')
+      img.thumbnail src=image_path('screenshots/mycuro/3.jpg')
+      img.thumbnail src=image_path('screenshots/mycuro/4.jpg')
+
+
+.project
+  .text
+    .title Why I'm Here
+    p.intro App to let employees submit online or as a text message why they liked working for OptumHealth, with moderated posts appearing on large screens throughout the corporate campus.
+    p I built the backend to this fun little project which used Twillio for SMS integration and had a basic admin approval process.  Data was exposed via web services to the frontend Flash-based video display.  My first production app deployed to heroku.
+    .role Role: backend, js, layout
+    .tech Tech: rails, twillio, heroku
+  .pics
+    == image_tag 'screenshots/why/1.jpg', class: 'main-image'
+    .thumbnails
+      img.thumbnail.active src=image_path('screenshots/why/1.jpg') 
+      img.thumbnail src=image_path('screenshots/why/2.jpg')
+      img.thumbnail src=image_path('screenshots/why/3.jpg')
+      img.thumbnail src=image_path('screenshots/why/4.jpg')
+   
+
+.project
+  .text
+    .title Amex Travel Resources
+    p.intro Find travel offices for American Express worked 100% with javascript turned off.
+    p I was the backend developer on this projected tasked with combining two existing merb applications into a single rails 3.0 app, while replacing mapquest with google maps and making *significant* accessibility enhancements.  Namely, the entire experience of paginating through results on a map had to work without javascript, using the google maps static image api.  When the page loaded it would use js if available to turn it into a dynamic ajax map experience, even sharing the same mustache-based templates with the server.
+    p I wrote a fairly robust mapping UI library in backbone, with pluggable features like a results pane, map tooltips, pagination, filtering, and ajax updates to accomodate the two slightly different maps in the merged app, and I was able to use it in several other projects as well.  This site recently got an updated design, which I helped out in the planning stages and to setup the new server.
+    .role Role: backend, js, sysadmin, layout
+    .tech Tech: rails, merb, backbone, googlemaps, jammit
+  .pics
+    == image_tag 'screenshots/magellan/1.jpg', class: 'main-image'
+    .thumbnails
+      img.thumbnail.active src=image_path('screenshots/magellan/1.jpg') 
+      img.thumbnail src=image_path('screenshots/magellan/2.jpg')
+      img.thumbnail src=image_path('screenshots/magellan/3.jpg')
+   
+
+.project
+  .text
+    .title Orange Julius
+    p.intro A website for smoothies, built on a .net CMS.
+    p I took care of the wacky layout and several interactive widgets on the homepage, including CMS-able animations built out of several customizable layers.  I worked on the map page as well and a little layout here and there.
+    .role Role: js, layout, animations
+    .tech Tech: googlemaps
+
+  .pics
+    == image_tag 'screenshots/oj/1.jpg', class: 'main-image'
+    .thumbnails
+      img.thumbnail.active src=image_path('screenshots/oj/1.jpg') 
+      img.thumbnail src=image_path('screenshots/oj/2.jpg')
+      img.thumbnail src=image_path('screenshots/oj/3.jpg')
+  
+ 
+.project
+  .text
+    .title Cambria Color Picker
+    p.intro Facebook tab app to filter cambria's tiles.
+    p This was one of my first projects working at space150 but I still pretty proud of the quality of the js code for this one.  To make filtering fast even in ie6 I based the filtering logic on bitmasks, creating a small Bitmask class which called `valueOf` on all operands to work polymorphicly on other Bitmasks or plain numbers.  The backend attached bitmask values via data- attributes (before it was cool!) so the frontend was completely agnostic to the meaning of a given bitmask, making updates easy.  The page had a jquery ui widget for the list, the filter, and a parent that listened to events and communicated between the two.  Pretty dece.
+    .role Role: js, layout
+    .tech Tech: jquery-ui
+
+  .pics
+    == image_tag 'screenshots/cambria-color/1.jpg', class: 'main-image'
+    .thumbnails
+      img.thumbnail.active src=image_path('screenshots/cambria-color/1.jpg') 
+      img.thumbnail src=image_path('screenshots/cambria-color/2.jpg')
+      img.thumbnail src=image_path('screenshots/cambria-color/3.jpg')
+  
+.project
+  .text
+    .title King Fantastic
+    p.intro Upload your photo to get a 3d render of your face in the music video
+    p Sadly this site is no longer around, but i did the responsive layout and js that integrated with the flash-based image uploader and video player.  it used hashbang urls to track state throughout the app, and was fun as i decided to write it without using jquery.
+    .role role: layout, js
+    .tech tech:
+
+  .pics
+    == image_tag 'screenshots/king-fantastic/1.jpg', class: 'main-image'
+    .thumbnails
+      img.thumbnail.active src=image_path('screenshots/king-fantastic/1.jpg') 
+      img.thumbnail src=image_path('screenshots/king-fantastic/2.jpg')
+ 
+
+.project
+  .text
+    .title Health Conductor
+    p.intro Templates and interactive js for a healthcare assessment site.
+    p sadly Layout all the way back to ie6.
+    .role role: layout, js
+    .tech tech: jquery-ui
+
+  .pics
+    == image_tag 'screenshots/health/1.jpg', class: 'main-image'
+    .thumbnails
+      img.thumbnail.active src=image_path('screenshots/health/1.jpg') 
+      img.thumbnail src=image_path('screenshots/health/2.jpg')
+      img.thumbnail src=image_path('screenshots/health/3.jpg')
+
+.project
+  .text
+    .title Internal Dashboard
+    p.intro Internal dashboard
+    p Developed the frontend architecture to integrate with backend services written in ruby, perl and dotnet.
+    .role role: js, sysadmin
+    .tech tech: backbone
+
+  .pics
+    == image_tag 'screenshots/dashboard/1.jpg', class: 'main-image'
+    .thumbnails
+      img.thumbnail.active src=image_path('screenshots/dashboard/1.jpg') 
+      img.thumbnail src=image_path('screenshots/dashboard/2.jpg')
+ 
+.project
+  .text
+    .title cakes.com
+    p.intro Consumer facing frontend site with a backend store cake ordering system.
+    p I came on to help add several JS and rails features to the backend ordering system.  Over time I assumed the role of primary maintainer for the CMS frontend and ordering backend site, helping to add several additional features.
+    .role role: backend, js
+    .tech tech: rails
+
+  .pics
+    == image_tag 'screenshots/cakes/1.jpg', class: 'main-image'
+    .thumbnails
+      img.thumbnail.active src=image_path('screenshots/cakes/1.jpg') 
+      img.thumbnail src=image_path('screenshots/cakes/2.jpg')
+      img.thumbnail src=image_path('screenshots/cakes/3.jpg')
+ 
