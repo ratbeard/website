@@ -1,36 +1,75 @@
 ---
-title: Mikes Work
+title: Work
 ---
 
 .project
-	.copy
-		.title Protect The Football
-		p.intro Make it on the leaderboard with two HTML5 games and win big prizes.
-		p I worked primarily building out the scoring and leaderboard functionality (including code to detect cheaters) as well as building the IE/mobile HTML-based card-matching game to compliment the canvas-based platformer.  I animated the post-game screens and got some experience with impactJS working on cutscenes and game flow logic.
-		p Winner of a <a href="#">site of the day</a> award.
-		.role Role: backend, js, animation
-		.tech Tech: rails, impactJS, hype, heroku
-	.pics
-		.main
-		.thumbnails
-			.thumbnail
-			.thumbnail
-			.thumbnail
-			.thumbnail
-		
-		
+  .text
+    .title Protect The Football
+    p.intro Compete in two HTML5 games to get on the leaderboard.
+    p I worked primarily building out the scoring and leaderboard functionality (including code to detect cheaters) as well as building the IE/mobile HTML-based card-matching game to compliment the canvas-based platformer.  I animated the post-game screens and got some experience with impactJS working on cutscenes and game flow logic.
+    p Winner of a <a href="#">site of the day</a> award.
+    .role Role: backend, js, animation
+    .tech Tech: rails, impactJS, hype, heroku
+  .pics
+    == image_tag 'screenshots/protectthefootball/11.jpg', class: 'main-image'
+    .thumbnails
+      img.thumbnail.active src=image_path('screenshots/protectthefootball/1.jpg') 
+      img.thumbnail src=image_path('screenshots/protectthefootball/2.jpg')
+      img.thumbnail src=image_path('screenshots/protectthefootball/3.jpg')
+      img.thumbnail src=image_path('screenshots/protectthefootball/4.jpg')
+      
 .project
-	.copy
-		.title Cambria
-		p.intro Beautiful design met awesome interactive features for this premium countertop company.
-		p I'm still impressed with what designer Dan Jenstad and I were able to achieve in the three "dream scene" animated homepages built in 2010 when css transitions, 3d transforms, and keyframes to create effects that looked like they were made in flash but could run smoothly on an ipad1, with fallback animations for ie7.  
-		p I did some other misc. layout on the site and built the store locator.
-		.role Role: animations, js, layout
-		.tech Tech: middleman, google maps
-	.pics
-		.main
-		.thumbnails
-			.thumbnail
-			.thumbnail
-			.thumbnail
-			.thumbnail
+  .text
+    .title Cambria
+    p.intro Beautiful design came alive for this premium countertop company.
+    p I'm still impressed with what designer Dan Jenstad and I were able to achieve in the three "dream scene" animated homepages built in 2010 when css transitions, 3d transforms, and keyframes to create effects that looked like they were made in flash but could run smoothly on an ipad1, with fallback animations for ie7.  
+    p I did some other misc. layout on the site and built the store locator.
+    .role Role: animations, js, layout
+    .tech Tech: middleman, google maps
+  .pics
+    == image_tag 'screenshots/cambria/1.jpg', class: 'main-image'
+    .thumbnails
+      img.thumbnail.active src=image_path('screenshots/protectthefootball/1.jpg') 
+      img.thumbnail src=image_path('screenshots/protectthefootball/2.jpg')
+      img.thumbnail src=image_path('screenshots/protectthefootball/3.jpg')
+      img.thumbnail src=image_path('screenshots/protectthefootball/4.jpg')
+
+
+.project
+  .text
+    .title 3M Innovation Center
+    p.intro Responsive-friendly CMS site showing off 3M's innovation.
+    p
+      | I built a custom CMS on jruby and rails_admin, adding 
+      | reponsive ui widgets, i18n, and a multi-server publishing system. 
+      | I did tons of other frontend and backend on the site including: a custom map page, a social "feed" on the homepage, 
+      | reponsive image swapper, brightcove video integration, a few 
+      | animations, and automated translation xml import/export code.
+    
+    .role Role: backend, js, sysadmin, layout, animation
+    .tech Tech: jruby, rails, rails_admin
+  .pics
+    == image_tag 'screenshots/innovation/1.jpg', class: 'main-image'
+    .thumbnails
+      img.thumbnail.active src=image_path('screenshots/innovation/1.jpg') 
+      img.thumbnail src=image_path('screenshots/innovation/2.jpg')
+      img.thumbnail src=image_path('screenshots/innovation/3.jpg')
+      img.thumbnail src=image_path('screenshots/innovation/4.jpg')
+
+
+.project
+  .text
+    .title 
+    p.intro 
+    p 
+    .role
+    .tech  
+  .pics
+    == image_tag 'screenshots//1.jpg', class: 'main-image'
+    .thumbnails
+      img.thumbnail.active src=image_path('screenshots//1.jpg') 
+      img.thumbnail src=image_path('screenshots//2.jpg')
+      img.thumbnail src=image_path('screenshots//3.jpg')
+      img.thumbnail src=image_path('screenshots//4.jpg')
+
+

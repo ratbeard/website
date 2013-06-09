@@ -25,6 +25,18 @@
 # 	window.mySwipe = new Swipe($('.gallery')[0])
 
 
+$ ->
+  $('.thumbnail').click ->
+    el = $(@)
+    el.addClass('active').siblings('.active').removeClass('active')
+
+
+
+return
+
+#
+# work3
+#
 class Project
   constructor: (@el, @guideEl, @index, @id) ->
 

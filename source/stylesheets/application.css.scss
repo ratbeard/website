@@ -3,21 +3,27 @@
 @import 'base';
 @import 'nav';
 
+
+img {
+  max-width: 100%;
+}
+
+
 .project {
+  color: #353128;
 	overflow: hidden;
-	padding: 60px 0;
+	padding: 60px 40px;
 	clear: both;
 
-	.copy, .pics {
+	.text, .pics {
 		width: 50%;
 		box-sizing: border-box;
 	}
 
-	// copy
+	// text
 	// ====
-	.copy {
-		float: left;
-		padding: 0 2%;
+	.text {
+		padding: 3px 2em;
 	}
 	.title  {
 		font-size: 2em;
@@ -29,25 +35,27 @@
 	// pics
 	// ====
 	.pics {
-		float: right;
-		.main {
-			width: 100%;
-			height: 300px;
-			background: #ccc;
-		}
-		.thumbnail {
-			display: inline-block;
-			width: 30px;
-			height: 30px;
-			background: #ddd;
-			margin: 2% 2% 0 0;
-		}
+    overflow: hidden;
 	}
+  .main-image {
+  }
+  .thumbnail {
+    display: inline-block;
+    width: 30px;
+    background: #ddd;
+    margin: 2% 2% 0 0;
 
+    @include filter(grayscale(100%));
+    &.active {
+      @include filter(none);
+    }
+  }    
 
 	// Rows
+  .text { float: left;}
+  .pics { float: right;}
 	&:nth-of-type(even) {
-		.copy { float: right;}
+		.text { float: right;}
 		.pics { float: left;}
 	}
 }
@@ -84,6 +92,7 @@
 		width: 20%;
 		// border: 1px solid green;
 	}
+  .left-col img { display: none; }
 	.left-col, .right-col {
 		padding-top: 70px;
 
@@ -269,5 +278,22 @@ body, html {width:100%; height: 100%;}
       text-decoration:none;
       /*text-shadow:0px 1px 0px #8f7f24;              */
       margin-right:5px;
+}
+
+
+
+.project4 {
+  .box {
+    width: 50%;
+    float: left;
+  }
+  .box3 {
+    clear: left;
+  }
+  img { 
+    width: 100%;
+    text-align: center;
+  }
+
 }
 
