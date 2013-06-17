@@ -3,8 +3,8 @@
 @import 'compass/css3';
 @import "compass/utilities/lists/horizontal-list";
 
-
-
+// Generic
+// ====
 body {
   font-family: 'Lato', sans-serif;
   background-image: url(/images/cream_pixels.png);
@@ -22,11 +22,15 @@ img {
   max-width: 100%;
 }
 
+.links {
+    @include horizontal-list;
+}
+
 // Home
 // ====
 .welcome {
   max-width: 580px;
-  margin: 100px auto;
+  margin: 150px auto;
 
   .pic {
     float: left;
@@ -36,7 +40,10 @@ img {
     box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.1);
   }
   .text {
-    padding: 1px 5px;
+    padding: 0 5px;
+  }
+  h2 {
+    padding-top: 8px;
   }
   .links {
     @include horizontal-list;
@@ -58,13 +65,16 @@ img {
   }
 
   .text {
-  	padding: 3px 2em;
+  	padding: 5px 2em;
   }
   .title  {
   	font-size: 2em;
   }
   .intro {
   	font-size: 1.05em;
+  }
+  .links {
+    padding-top: 1em;
   }
 
   .pics {
