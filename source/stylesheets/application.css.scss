@@ -19,6 +19,8 @@ img {
   max-width: 100%;
 }
 
+// Home
+// ====
 .intro {
   max-width: 580px;
   margin: 100px auto;
@@ -27,12 +29,17 @@ img {
     float: left;
     padding-right: 20px;
   }
+  img {
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.1);
+  }
   .text {
     padding: 1px 5px;
   }
 }
 
 
+// Work
+// ====
 .project {
   color: #353128;
   overflow: hidden;
