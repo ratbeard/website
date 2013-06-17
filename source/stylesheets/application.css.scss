@@ -28,12 +28,9 @@ img {
     padding-right: 20px;
   }
   .text {
-    // float: right;
     padding: 1px 5px;
   }
 }
-
-
 
 
 .project {
@@ -47,19 +44,17 @@ img {
     box-sizing: border-box;
   }
 
-	// text
-	// ====
-	.text {
-		padding: 3px 2em;
-	}
-	.title  {
-		font-size: 2em;
-	}
-	.intro {
-		font-size: 1.05em;
-	}
+  .text {
+  	padding: 3px 2em;
+  }
+  .title  {
+  	font-size: 2em;
+  }
+  .intro {
+  	font-size: 1.05em;
+  }
 
-	.pics {
+  .pics {
     overflow: hidden;
   }
   .main-image {
@@ -77,239 +72,10 @@ img {
   }
 
 	// Rows
-  .text { float: left;}
-  .pics { float: right;}
+  .text { float: left }
+  .pics { float: right }
   &:nth-of-type(even) {
-    .text { float: right;}
-    .pics { float: left;}
+    .text { float: right }
+    .pics { float: left }
   }
 }
-
-
-.project2 {
-	margin-top: 200px;
-	overflow: hidden;
-	clear: both;
-	margin: 20px auto;
-	position: relative;
-	max-width: 1200px;
-	.title {
-		font-size: 2em;
-		text-align: center;
-		padding: 15px 0;
-	}
-	.main-image {
-		// width: 525px;
-		// height: 300px;
-		background: #ccc;
-		display: block;
-		margin: 0 auto;
-		max-width: 100%;
-	}
-
-	.pic {
-		width: 150px;
-		height: 100px;
-		background: #ccc;
-	}
-	.col {
-		float: left;
-		width: 20%;
-		// border: 1px solid green;
-	}
-  .left-col img { display: none; }
-  .left-col, .right-col {
-    padding-top: 70px;
-
-    img {
-     max-width: 200px;
-     margin: 0 0 20px 0;
-   }
- }
- .center-col {
-  width: 60%;
-}
-
-a.btn {
-  margin-top: 10px;
-}
-text-align: center;
-}
-
-.btn {
-  box-shadow:inset 0px 1px 0px 0px #ffe0b5;
-  background:linear-gradient(to bottom, #fbb450 5%, #f89306 100%);
-  background-color:#fbb450;
-  border-radius:7px;
-  border:1px solid #c97e1c;
-  display:inline-block;
-  color:#ffffff;
-  font-family:Trebuchet MS;
-  font-size:17px;
-  font-weight:bold;
-  padding:6px 11px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #8f7f24;
-}
-.btn:hover {
-  background:linear-gradient(to bottom, #f89306 5%, #fbb450 100%);
-  background-color:#f89306;
-}
-.btn:active {
-  position:relative;
-  top:1px;
-}
-
-
-.guide {
-	position: fixed;
-	top: 50px;
-
-	> li {
-		width:  20px;
-		height: 20px;
-		background: #ccc;
-		margin: 10px;
-		&.active {
-			border: 1px solid green;
-		}
-	}
-}
-
-.guide2 {
-	position: fixed;
-	top: 10px;
-  right: 10px;
-
-  > li {
-    width:  20px;
-    height: 20px;
-    background: #ccc;
-    margin-bottom: 10px;
-    &.active {
-     outline: 1px solid #3498db;
-     @include filter(none);
-   }
- }
- img {
-  @include filter(grayscale(100%));
-    /*@include transition(all .4s);*/
-    &:hover {
-      /*@include filter(grayscale(0));*/
-    }
-  }
-}
-.next2 {
-	position: fixed;
-	top: 50%;
-  right: 0;
-  background: #8e44ad;
-  background: #3498db;
-  color: white;
-  /*text-shadow: 1px 1px #333;*/
-  padding: 12px 12px 12px 30px;
-  border-radius: 8px 0 0 8px;
-  text-decoration: none;
-}
-
-
-
-.project3 {
-  display: none;
-  height: 100%;
-  overflow: hidden;
-
-  .centered {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    max-width: 580px;
-    min-height: 200px;
-    display: table;
-    z-index: 2;
-
-    background: white;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 3px;
-    box-shadow: inset #f6f6f6 0 -5px 10px, 7px 7px 15px rgba(50, 50, 50, 0.55);
-  }
-  .main {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 20px;
-  }
-  .title {
-    font-size: 1.8em;
-    text-align: center;
-  }
-
-  img {
-    width: 33%;
-    position: absolute;
-    border-radius: 2px;
-    box-shadow: #f6f6f6 3px 1px ;
-    -webkit-transition: -webkit-filter .3s;
-    &:hover {
-      -webkit-filter: invert(100%);
-    }
-
-    &.a {
-      top: 15%;
-      left: 9%;
-      -webkit-transform: rotate(2deg);
-    }
-    &.b {
-      bottom: 5%;
-      left: 60%;
-      /*-webkit-transform: rotate(1deg);*/
-    }
-    &.c {
-      bottom: 2%;
-      left: 7%;
-      -webkit-transform: rotate(-1deg);
-    }
-    &.d {
-      top: 7%;
-      right: 4%;
-    }
-    &.e {
-      top: 42%;
-      left: 4%;
-    }
-  }
-}
-.btn3 {
-  background-color:#3498db;
-  border-radius:1px;
-  display:inline-block;
-  color:#ffffff;
-      /*font-family:Trebuchet MS;*/
-      font-size:17px;
-      /*font-weight:bold;*/
-      padding:6px 11px;
-      text-decoration:none;
-      /*text-shadow:0px 1px 0px #8f7f24;              */
-      margin-right:5px;
-    }
-
-
-
-    .project4 {
-      .box {
-        width: 50%;
-        float: left;
-      }
-      .box3 {
-        clear: left;
-      }
-      img {
-        width: 100%;
-        text-align: center;
-      }
-
-    }
-
