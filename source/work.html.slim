@@ -10,12 +10,13 @@ nav
     .title BWW Protect The Football
     p.intro Compete in two HTML5 games to get on the leaderboard.
     p I worked primarily building out the scoring and leaderboard functionality (including code to detect cheaters) as well as building the IE/mobile HTML-based card-matching game to compliment the canvas-based platformer.  I animated the post-game screens and got some experience with impactJS working on cutscenes and game flow logic.
-    p Winner of a <a href="#">site of the day</a> award.
+    p Winner of a <a href="http://www.awwwards.com/web-design-awards/buffalo-wild-wings-protect-the-football" target="_blank">site of the day</a> award.
     .role Role: backend, js, animation
     .tech Tech: rails, impactJS, hype, heroku
     ul.links
       li
         a href="https://www.buffalowildwings.com/protectthefootball/" target="_blank" View Site
+      li
         a href="https://www.buffalowildwings.com/protectthefootball/game?lite=1" target="_blank" Play Card Game
   .pics
     == image_tag 'screenshots/protectthefootball/1.jpg', class: 'main-image'
@@ -34,6 +35,9 @@ nav
     p I did some other misc. layout on the site and built the store locator.
     .role Role: animations, js, layout
     .tech Tech: middleman, google maps
+    ul.links
+      li
+        a href="http://cambriausa.com/" target="_blank" View Site
   .pics
     == image_tag 'screenshots/cambria/1.jpg', class: 'main-image'
     .thumbnails
@@ -55,9 +59,11 @@ nav
       | I did tons of other frontend and backend on the site including: a custom map page, a social "feed" on the homepage,
       | reponsive image swapper, brightcove video integration, a few
       | animations, and automated translation xml import/export code.
-
     .role Role: backend, js, sysadmin, layout, animation
     .tech Tech: jruby, rails, rails_admin
+    ul.links
+      li
+        a href="http://solutions.3m.com/innovation/en_US/" target="_blank" View Site
   .pics
     == image_tag 'screenshots/innovation/1.jpg', class: 'main-image'
     .thumbnails
@@ -96,6 +102,9 @@ nav
     p A wide range of support from ie6 to android tablets to embedding within a facebook tab.  My first use of cucumber on a serious project, which was a lot of fun to test the js wizard and validation steps
     .role Role: backend, js
     .tech Tech: rails, rackspace cloud, cucumber
+    ul.links
+      li
+        a href="http://offers.3m.com/programs/" target="_blank" View Site
   .pics
     == image_tag 'screenshots/offers/1.jpg', class: 'main-image'
     .thumbnails
@@ -112,6 +121,9 @@ nav
     p This was a fun animation project to promote a new type of wings for Buffalo Wild Wings.  Scrolling the page moved the wing through a series of CSS and JS based animations.  Try scrolling the wing back and forward through the fire to launch an army of tiny parachutes.  Keep clicking on the wing and you might see an easter egg (or two).
     .role Role: animation, layout
     .tech Tech: middleman
+    ul.links
+      li
+        a href="https://www.buffalowildwings.com/breadedwings/" target="_blank" View Site
   .pics
     == image_tag 'screenshots/wingers/1.jpg', class: 'main-image'
     .thumbnails
@@ -161,6 +173,9 @@ nav
     p I wrote a fairly robust mapping UI library in backbone, with pluggable features like a results pane, map tooltips, pagination, filtering, and ajax updates to accomodate the two slightly different maps in the merged app, and I was able to use it in several other projects as well.  This site recently got an updated design, which I helped out in the planning stages and to setup the new server.
     .role Role: backend, js, sysadmin, layout
     .tech Tech: rails, merb, backbone, googlemaps, jammit
+    ul.links
+      li
+        a href="http://amextravelresources.com/search" target="_blank" View Site
   .pics
     == image_tag 'screenshots/magellan/1.jpg', class: 'main-image'
     .thumbnails
@@ -176,7 +191,9 @@ nav
     p I took care of the wacky layout and several interactive widgets on the homepage, including CMS-able animations built out of several customizable layers.  I worked on the map page as well and a little layout here and there.
     .role Role: js, layout, animations
     .tech Tech: googlemaps
-
+    ul.links
+      li
+        a href="http://www.orangejulius.com/" target="_blank" View Site
   .pics
     == image_tag 'screenshots/oj/1.jpg', class: 'main-image'
     .thumbnails
@@ -190,6 +207,9 @@ nav
     .title Cambria Color Picker
     p.intro Facebook tab app to filter cambria's tiles.
     p This was one of my first projects working at space150 but I still pretty proud of the quality of the js code for this one.  To make filtering fast even in ie6 I based the filtering logic on bitmasks, creating a small Bitmask class which called `valueOf` on all operands to work polymorphicly on other Bitmasks or plain numbers.  The backend attached bitmask values via data- attributes (before it was cool!) so the frontend was completely agnostic to the meaning of a given bitmask, making updates easy.  The page had a jquery ui widget for the list, the filter, and a parent that listened to events and communicated between the two.  Pretty dece.
+    ul.links
+      li
+        a href="https://www.facebook.com/CambriaQuartz/app_450055328378774" target="_blank" View Site
     .role Role: js, layout
     .tech Tech: jquery-ui
 
@@ -207,7 +227,6 @@ nav
     p Sadly this site is no longer around, but i did the responsive layout and js that integrated with the flash-based image uploader and video player.  it used hashbang urls to track state throughout the app, and was fun as i decided to write it without using jquery.
     .role role: layout, js
     .tech tech:
-
   .pics
     == image_tag 'screenshots/king-fantastic/1.jpg', class: 'main-image'
     .thumbnails
@@ -222,13 +241,13 @@ nav
     p sadly Layout all the way back to ie6.
     .role role: layout, js
     .tech tech: jquery-ui
-
   .pics
     == image_tag 'screenshots/health/1.jpg', class: 'main-image'
     .thumbnails
       img.thumbnail.active src=image_path('screenshots/health/1.jpg')
       img.thumbnail src=image_path('screenshots/health/2.jpg')
       img.thumbnail src=image_path('screenshots/health/3.jpg')
+
 
 .project
   .text
@@ -244,6 +263,7 @@ nav
       img.thumbnail.active src=image_path('screenshots/dashboard/1.jpg')
       img.thumbnail src=image_path('screenshots/dashboard/2.jpg')
 
+
 .project
   .text
     .title cakes.com
@@ -251,7 +271,9 @@ nav
     p I came on to help add several JS and rails features to the backend ordering system.  Over time I assumed the role of primary maintainer for the CMS frontend and ordering backend site, helping to add several additional features.
     .role role: backend, js
     .tech tech: rails
-
+    ul.links
+      li
+        a href="http://cakes.com/" target="_blank" View Site
   .pics
     == image_tag 'screenshots/cakes/1.jpg', class: 'main-image'
     .thumbnails
