@@ -26,6 +26,20 @@ img {
     @include horizontal-list;
 }
 
+// Header
+// =====
+nav {
+  margin-top: 6px;
+  a {
+    padding:  7px 15px;
+    margin-left: 75px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+
 // Home
 // ====
 .welcome {
