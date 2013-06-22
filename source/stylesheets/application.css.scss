@@ -150,11 +150,12 @@ body.work  {
     display: inline-block;
     width: 30px;
     background: #ddd;
-    margin: 2% 2% 0 0;
+    margin: 2% 2%;
 
     @include filter(grayscale(100%));
     &.active {
       @include filter(none);
+      box-shadow: 0 0 4px 2px #E67E22;
     }
   }
 
