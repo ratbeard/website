@@ -122,12 +122,12 @@ body.work  {
   padding: 60px 0;
   color: #353128;
 
-  .text, .pics {
+  .description, .pics {
     width: 50%;
     box-sizing: border-box;
   }
 
-  .text {
+  .description {
     float: left;
     padding: 5px 2em 5px 0;
   }
@@ -164,7 +164,7 @@ body.work  {
 
   // Rows
   &:nth-of-type(even) {
-    .text {
+    .description {
       float: right;
       padding: 5px 0 5px 2em;
     }
@@ -178,7 +178,7 @@ body.work  {
     padding: 20px 20px;
 
     // stack
-    .text, .pics {
+    .description, .pics {
       float: none;
       width: 100%;
       padding: 5px 0em;
