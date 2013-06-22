@@ -23,18 +23,27 @@ img {
 }
 
 .links {
-    @include horizontal-list;
+  @include horizontal-list;
 }
+
+a:link { color: #e67e22; }
+a:visited { color: #e67e22; }
+a:hover { color: #B34B00 }
+a:active { color: #801800 }
+
+
+
 
 // Header
 // =====
 nav {
   margin-top: 6px;
+  margin-left: 40px;
   a {
     padding:  7px 15px;
-    margin-left: 75px;
-    background: #3498db;
-    color: white;
+    margin-right: 20px;
+    background: white;
+    color: #e67e22;
     text-decoration: none;
   }
 }
@@ -42,10 +51,14 @@ nav {
 
 // Home
 // ====
-.welcome {
-  max-width: 580px;
-  margin: 150px auto;
-
+body.index {
+  #content {
+    max-width: 580px;
+    margin: 0 auto;
+  }
+  .welcome {
+    margin-top: 140px;
+  }
   .pic {
     float: left;
     padding-right: 20px;
@@ -67,10 +80,15 @@ nav {
 
 // Work
 // ====
+body.work  {
+  #content {
+    padding: 0 40px;
+  }
+}
 .project {
   color: #353128;
   overflow: hidden;
-  padding: 60px 40px;
+  padding: 60px 0;
   clear: both;
 
   .text, .pics {
@@ -79,7 +97,8 @@ nav {
   }
 
   .text {
-  	padding: 5px 2em;
+      float: left;
+  	padding: 5px 2em 5px 0;
   }
   .title  {
   	font-size: 2em;
@@ -92,6 +111,7 @@ nav {
   }
 
   .pics {
+    float: right;
     overflow: hidden;
   }
   .main-image {
@@ -109,16 +129,17 @@ nav {
   }
 
   // Rows
-  .text { float: left }
-  .pics { float: right }
   &:nth-of-type(even) {
-    .text { float: right }
+    .text {
+      float: right;
+      padding: 5px 0 5px 2em;
+    }
     .pics { float: left }
   }
 }
 
 @media (max-width: 700px) {
-  .project {
+  body.work #content {
     // reduce gap
     padding: 20px 20px;
 
