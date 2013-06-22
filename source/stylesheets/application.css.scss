@@ -116,10 +116,11 @@ body.work  {
   }
 }
 .project {
-  color: #353128;
   overflow: hidden;
-  padding: 60px 0;
+  position: relative;
   clear: both;
+  padding: 60px 0;
+  color: #353128;
 
   .text, .pics {
     width: 50%;
@@ -127,8 +128,8 @@ body.work  {
   }
 
   .text {
-      float: left;
-  	padding: 5px 2em 5px 0;
+    float: left;
+    padding: 5px 2em 5px 0;
   }
   .title  {
   	font-size: 2em;
@@ -142,15 +143,17 @@ body.work  {
 
   .pics {
     float: right;
-    overflow: hidden;
   }
   .main-image {
+  }
+  .thumbnails {
+    padding-top: 2em;
   }
   .thumbnail {
     display: inline-block;
     width: 30px;
     background: #ddd;
-    margin: 2% 2%;
+    margin: .5em;
 
     @include filter(grayscale(100%));
     &.active {
