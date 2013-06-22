@@ -76,13 +76,16 @@ configure :build do
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
+  activate :asset_host
+  # set :asset_host, "http://d1s93caews9t2v.cloudfront.net/"
+  set :asset_host, "http://assets.mikefrawley.com/"
 end
 
 
 # This un-checked in file should contain:
 #   S3_ACCESS_KEY = '...'
 #   S3_SECRET_KEY = '...'
-# 
+#
 load './secrets.rb'
 
 activate :s3_sync do |s3_sync|
