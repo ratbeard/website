@@ -31,6 +31,26 @@ section.project
 
 section.project
   .description
+    .title 3M Innovation Center
+    p.intro CMS powered, responsive designed site showing off 3M's innovation.
+    p I built a custom CMS on top of jruby and rails_admin, adding in features like support for responsive ui widgets, i18n, and a multi-server publishing system.  I touched lots of other frontend and backend pieces of the site including a custom map page, social "feed" on the homepage,  responsive image swapper, brightcove video integration, a few animations, and xml import/export to translate the content to a dozen languages.
+    .role Role: backend, js, sysadmin, layout, animation
+    .tech Tech: jruby, rails
+    ul.links
+      li
+        a href="http://solutions.3m.com/innovation/en_US/" target="_blank" View Site
+    .thumbnails
+      img.thumbnail.active src=image_path('screenshots/innovation/1.jpg')
+      img.thumbnail src=image_path('screenshots/innovation/2.jpg')
+      img.thumbnail src=image_path('screenshots/innovation/3.jpg')
+      img.thumbnail src=image_path('screenshots/innovation/4.jpg')
+      img.thumbnail src=image_path('screenshots/innovation/5.jpg')
+  .pics
+    == image_tag 'screenshots/innovation/1.jpg', class: 'main-image'
+
+
+section.project
+  .description
     .title Cambria
     p.intro Dream-like HTML homepage animations.
     p I'm still impressed with what designer Dan Jenstad and I were able to achieve in three animated "dream scene" homepages built back in 2010 when css transitions, 3d transforms, and keyframe animations were still new territory.  I spent many long days and weekends researching ways we could create effects normally reserved for Flash on an ipad1.   Most css effects as I was able to build js fallbacks for older versions of IE.
@@ -49,26 +69,6 @@ section.project
       img.thumbnail src=image_path('screenshots/cambria/6.jpg')
   .pics
     == image_tag 'screenshots/cambria/1.jpg', class: 'main-image'
-
-
-section.project
-  .description
-    .title 3M Innovation Center
-    p.intro CMS powered, responsive designed site showing off 3M's innovation.
-    p I built a custom CMS on top of jruby and rails_admin, adding in features like support for responsive ui widgets, i18n, and a multi-server publishing system.  I touched lots of other frontend and backend pieces of the site including a custom map page, social "feed" on the homepage,  responsive image swapper, brightcove video integration, a few animations, and xml import/export to translate the content to a dozen languages.
-    .role Role: backend, js, sysadmin, layout, animation
-    .tech Tech: jruby, rails
-    ul.links
-      li
-        a href="http://solutions.3m.com/innovation/en_US/" target="_blank" View Site
-    .thumbnails
-      img.thumbnail.active src=image_path('screenshots/innovation/1.jpg')
-      img.thumbnail src=image_path('screenshots/innovation/2.jpg')
-      img.thumbnail src=image_path('screenshots/innovation/3.jpg')
-      img.thumbnail src=image_path('screenshots/innovation/4.jpg')
-      img.thumbnail src=image_path('screenshots/innovation/5.jpg')
-  .pics
-    == image_tag 'screenshots/innovation/1.jpg', class: 'main-image'
 
 
 section.project
