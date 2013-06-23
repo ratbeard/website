@@ -6,6 +6,10 @@
 
     <title><%= data.page.title || "˙∆˚ Mike Frawley" %></title>
 
+    <!--[if lt IE 9]>
+      <%= javascript_include_tag "oldie.js" %>
+    <![endif]-->
+    
     <%= stylesheet_link_tag "application" %>
   </head>
 
