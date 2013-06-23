@@ -28,3 +28,11 @@ Setting up cloudfront was really easy.  Made assets{1-4} subdomain and enabled a
 
 w/o cloudfront: 62 requests  ❘  4.6 MB transferred  ❘  13.88 s (onload: 13.90 s, DOMContentLoaded: 2.11 s)
 w/ cloudfront and 4 asset hosts: 62 requests  ❘  4.6 MB transferred  ❘  6.55 s (onload: 6.58 s, DOMContentLoaded: 3.01 s)
+
+
+misc
+===
+
+Resize images:
+
+    mogrify -resize 666x444 **/*.jpg

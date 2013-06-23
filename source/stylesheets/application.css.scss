@@ -28,7 +28,14 @@ body, html {
 img {
   max-width: 100%;
 }
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
 
+
+// Links
+// ====
 .links {
   @include horizontal-list;
 }
