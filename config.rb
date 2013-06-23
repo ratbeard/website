@@ -83,14 +83,16 @@ configure :build do
   set :asset_host do |asset|
     "http://assets%d.mikefrawley.com" % ((asset.hash % 4) + 1)
   end
-
 end
 
 
+# Deployment
+# ====
 # This un-checked in file should contain:
 #   S3_ACCESS_KEY = '...'
 #   S3_SECRET_KEY = '...'
-#
+#   CLOUDFRONT_ID = '...'
+#   
 load './secrets.rb'
 
 activate :s3_sync do |s3_sync|
@@ -102,6 +104,13 @@ activate :s3_sync do |s3_sync|
   s3_sync.after_build           = false # We chain after the build step by default. This may not be your desired behavior...
 end
 
+activate :cloudfront do |cf|
+  cf.access_key_id = S3_ACCESS_KEY
+  cf.secret_access_key = S3_SECRET_KEY
+  cf.distribution_id = CLOUDFRONT_ID
+  # cf.filter = /\.html$/i  # default is /.*/
+  # cf.after_build = false  # default is false
+end
 
-# Don't compress html
-Slim::Engine.set_default_options pretty: true
+
+

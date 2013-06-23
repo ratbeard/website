@@ -55,6 +55,9 @@ GEM
       middleman-core (= 3.0.5)
       middleman-more (= 3.0.5)
       middleman-sprockets (~> 3.0.2)
+    middleman-cloudfront (0.0.5)
+      fog (~> 1.9)
+      middleman-core (~> 3.0)
     middleman-core (3.0.5)
       activesupport (~> 3.2.6)
       bundler (~> 1.1)
@@ -144,5 +147,6 @@ DEPENDENCIES
   compass (~> 0.13.alpha.4)
   guard-livereload
   middleman (~> 3.0.5)
+  middleman-cloudfront
   middleman-s3_sync
   slim
