@@ -125,6 +125,11 @@ body {
 
 // Work
 // ====
+.work-intro {
+  max-width: 600px;
+  // margin: 40px auto 20px;
+  margin-top: 50px;
+}
 body.work  {
   #content {
     padding: 0 40px;
