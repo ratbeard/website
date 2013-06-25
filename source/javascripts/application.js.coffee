@@ -23,14 +23,31 @@ ancestorWithClass = (el, className) ->
 
 # App
 # ====
+# On clicking a thumbnail, update the active thumbnail and replace the main image
+showThumbnail = (thumbnailEl) ->
+  projectEl = ancestorWithClass(thumbnailEl, "project")
+  activeThumbnailEl = projectEl.querySelector(".active")
+  mainImageEl = projectEl.querySelector(".main-image")
+  removeClass(activeThumbnailEl, "active")
+  addClass(thumbnailEl, 'active')
+  mainImageEl.src = thumbnailEl.src
+
+showNextThumbnail = (mainImageEl) ->
+  projectEl = ancestorWithClass(mainImageEl, "project")
+  activeThumbnailEl = projectEl.querySelector(".active")
+  nextThumbnailEl = activeThumbnailEl.nextElementSibling || projectEl.querySelector(".thumbnail")
+  removeClass(activeThumbnailEl, "active")
+  addClass(nextThumbnailEl, 'active')
+  mainImageEl.src = nextThumbnailEl.src
+
+
 document.addEventListener "click", (e) ->
   el = e.target
 
-  # On clicking a thumbnail, update the active thumbnail and replace the main image
   if hasClass(el, 'thumbnail')
-  	projectEl = ancestorWithClass(el, "project")
-  	activeThumbnailEl = projectEl.querySelector(".active")
-  	mainImageEl = projectEl.querySelector(".main-image")
-  	removeClass(activeThumbnailEl, "active")
-  	addClass(el, 'active')
-  	mainImageEl.src = el.src
+  	showThumbnail(el)
+  else if hasClass(el, "main-image")
+  	showNextThumbnail(el)
+
+
+
