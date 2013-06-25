@@ -28,17 +28,19 @@ showThumbnail = (thumbnailEl) ->
   projectEl = ancestorWithClass(thumbnailEl, "project")
   activeThumbnailEl = projectEl.querySelector(".active")
   mainImageEl = projectEl.querySelector(".main-image")
-  removeClass(activeThumbnailEl, "active")
-  addClass(thumbnailEl, 'active')
-  mainImageEl.src = thumbnailEl.src
+  activateThumbnail(thumbnailEl, activeThumbnailEl, mainImageEl)
+
 
 showNextThumbnail = (mainImageEl) ->
   projectEl = ancestorWithClass(mainImageEl, "project")
   activeThumbnailEl = projectEl.querySelector(".active")
   nextThumbnailEl = activeThumbnailEl.nextElementSibling || projectEl.querySelector(".thumbnail")
-  removeClass(activeThumbnailEl, "active")
-  addClass(nextThumbnailEl, 'active')
-  mainImageEl.src = nextThumbnailEl.src
+  activateThumbnail(nextThumbnailEl, activeThumbnailEl, mainImageEl)
+
+activateThumbnail = (thumbnailEl, oldThumbnailEl, mainImageEl) ->
+  removeClass(oldThumbnailEl, "active")
+  addClass(thumbnailEl, 'active')
+  mainImageEl.src = thumbnailEl.src
 
 
 document.addEventListener "click", (e) ->
