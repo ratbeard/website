@@ -18,8 +18,15 @@ addClass = (el, className) ->
 
 # Like `closest` but takes a className not a selector
 ancestorWithClass = (el, className) ->
-	el = el.parentNode until !el || hasClass(el, className)
-	el
+  el = el.parentNode until !el || hasClass(el, className)
+  el
+
+# Ultra-modernizr
+# ====
+# http://caniuse.com/#feat=css-animation
+s = document.createElement('div').style
+if !(s.animationName || s.WebkitAnimationName)
+  addClass(document.documentElement, "no-animation")
 
 # App
 # ====

@@ -125,21 +125,23 @@ body {
 
 // Work
 // ====
-.work-intro {
-  max-width: 600px;
-  // margin: 40px auto 20px;
-  margin-top: 50px;
-}
 body.work  {
   #content {
     padding: 0 40px;
+  }
+}
+.work-intro {
+  padding-bottom: 0px;
+  img {
+    display: block;
+    margin: -20px auto 0;
   }
 }
 .project {
   overflow: hidden;
   position: relative;
   clear: both;
-  padding: 75px 0;
+  padding: 60px 0;
   color: #353128;
 
   .description, .pics {
@@ -190,6 +192,23 @@ body.work  {
     }
     .pics { float: left }
   }
+}
+
+// Animation
+@include keyframes(tilt) {
+      0% { @include transform(none) }
+  100% { @include transform(rotate(-3deg)) }
+}
+@include keyframes(tilt) {
+      0% { @include transform(scale(1.1)); opacity: 0 }
+  100% { @include transform(scale(1) rotate(-3deg)); opacity: 1 }
+}
+.work-intro img {
+  opacity: 0;
+  @include animation(tilt 1s .2s forwards ease-out)
+}
+.no-animation .work-intro img {
+   // opacity: 1
 }
 
 @media (max-width: 700px) {
