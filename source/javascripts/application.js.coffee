@@ -30,7 +30,6 @@ showThumbnail = (thumbnailEl) ->
   mainImageEl = projectEl.querySelector(".main-image")
   activateThumbnail(thumbnailEl, activeThumbnailEl, mainImageEl)
 
-
 showNextThumbnail = (mainImageEl) ->
   projectEl = ancestorWithClass(mainImageEl, "project")
   activeThumbnailEl = projectEl.querySelector(".active")
@@ -42,14 +41,13 @@ activateThumbnail = (thumbnailEl, oldThumbnailEl, mainImageEl) ->
   addClass(thumbnailEl, 'active')
   mainImageEl.src = thumbnailEl.src
 
+bindEvents = ->
+  document.addEventListener "click", (e) ->
+    el = e.target
+    if hasClass(el, 'thumbnail')
+    	  showThumbnail(el)
+    else if hasClass(el, "main-image")
+  	  showNextThumbnail(el)
 
-document.addEventListener "click", (e) ->
-  el = e.target
-
-  if hasClass(el, 'thumbnail')
-  	showThumbnail(el)
-  else if hasClass(el, "main-image")
-  	showNextThumbnail(el)
-
-
-
+# Start app
+bindEvents()
