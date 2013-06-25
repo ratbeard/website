@@ -168,11 +168,13 @@ body.work  {
     float: right;
   }
   .main-image {
+    cursor: pointer;
   }
   .thumbnails {
     padding-top: 2em;
   }
   .thumbnail {
+    cursor: pointer;
     display: inline-block;
     width: 30px;
     background: #ddd;
