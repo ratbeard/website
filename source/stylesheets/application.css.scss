@@ -147,7 +147,7 @@ body.work  {
 
   .description, .pics {
     width: 50%;
-    box-sizing: border-box;
+    @include box-sizing(border-box);
   }
 
   .description {
